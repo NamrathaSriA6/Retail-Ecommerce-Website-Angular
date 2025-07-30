@@ -1,0 +1,62 @@
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+<div class="min-h-screen flex items-center justify-center bg-[#b8c5d1]">
+  <div class="bg-white rounded-lg shadow-md p-8 w-[400px]">
+     <div class="flex justify-start mb-4">
+      <img src="https://150698241.v2.pressablecdn.com/retail/wp-content/uploads/sites/358/2025/07/retail-321.png" alt="Retail Logo" class="h-10" />
+    </div>
+
+    <div class="flex mb-6">
+      <button class="flex-1 bg-[#292042] text-white py-2 " disabled>Login</button>
+      <button class="flex-1 bg-white border border-gray-300 text-[#292042] py-2" (click)="goToSignup()">Sign Up</button>
+    </div>
+
+    <form (submit)="login(); $event.preventDefault()">
+      <label class="block text-sm font-medium text-gray-700 mb-1">
+        Username or email address <span class="text-red-500">*</span>
+        </label>
+        <input type="email" [(ngModel)]="email" name="email" class="w-full border border-gray-300 p-2 mb-4 rounded" placeholder="" />
+
+        <label class="block text-sm font-medium text-gray-700 mb-1">
+        Password <span class="text-red-500">*</span>
+        </label>
+       <div class="relative">
+        <input
+            [type]="showPassword ? 'text' : 'password'"
+            [(ngModel)]="password"
+            name="password"
+            class="w-full border border-gray-300 rounded py-2 px-3 pr-12"
+            autocomplete="off"
+        />
+        <button
+            type="button"
+            class="absolute right-3 top-2.5 text-gray-500 focus:outline-none"
+            (click)="togglePasswordVisibility()"
+        >
+            <i
+            class="fas"
+            [ngClass]="showPassword ? 'fa-eye-slash' : 'fa-eye'"
+            ></i>
+        </button>
+        </div>
+
+
+      <div class="flex items-center action-row">
+        <button type="submit" class="bg-[#292042] text-white py-2 px-6 rounded text-sm font-semibold">
+          Log in
+        </button>
+        <label class="text-sm text-gray-700 flex items-center remember-label">
+        <input type="checkbox" class="mr-2" name="rememberMe" [(ngModel)]="rememberMe" />
+        Remember me
+        </label>
+      </div>
+
+      <div class="mt-4 text-sm text-blue-600 underline cursor-pointer" (click)="goToForgotPassword()">
+        Lost your password?
+        </div>
+
+    </form>
+  </div>
+</div>

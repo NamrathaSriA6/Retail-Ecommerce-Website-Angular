@@ -17,11 +17,19 @@ import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { environment } from '../../environments/environment';
+import { LoginComponent } from './auth/login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { ForgetpasswordComponent } from './auth/forgetpassword/forgetpassword.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    DashboardComponent,
+    SignupComponent,
+    ForgetpasswordComponent
   ],
   imports: [
     BrowserModule,
