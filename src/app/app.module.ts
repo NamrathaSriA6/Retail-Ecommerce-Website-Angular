@@ -18,18 +18,24 @@ import { getDatabase, provideDatabase } from '@angular/fire/database';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { environment } from '../../environments/environment';
 import { LoginComponent } from './auth/login/login.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { ForgetpasswordComponent } from './auth/forgetpassword/forgetpassword.component';
+import { PagesComponent } from './pages/pages.component';
+import { NavbarComponent } from './pages/navbar/navbar.component';
+import { ContactusComponent } from './pages/contactus/contactus.component';
+import { FooterComponent } from './pages/footer/footer.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    DashboardComponent,
     SignupComponent,
-    ForgetpasswordComponent
+    ForgetpasswordComponent,
+    PagesComponent,
+    NavbarComponent,
+    ContactusComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
