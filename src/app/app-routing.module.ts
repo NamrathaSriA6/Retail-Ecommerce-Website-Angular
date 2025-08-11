@@ -3,11 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { AboutComponent } from './pages/about/about.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },           // Home page (default)
   { path: 'product', component: ProductDetailComponent }, // Product detail page
-  { path: 'cart', component: CartComponent }        // Cart page
+  { path: 'cart', component: CartComponent },        // Cart page
+  { path: 'about', component:AboutComponent}
 ];
 
 @NgModule({

@@ -20,6 +20,7 @@ import { environment } from '../../environments/environment';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { CartComponent } from './pages/cart/cart.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { CartComponent } from './pages/cart/cart.component';
     AppComponent,
     HomeComponent,
     ProductDetailComponent,
-    CartComponent
+    CartComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
