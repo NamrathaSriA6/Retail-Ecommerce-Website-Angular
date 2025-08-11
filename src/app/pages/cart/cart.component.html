@@ -1,0 +1,113 @@
+<div class="p-4 text-sm text-gray-500">
+    Home / Cart
+  </div>
+
+  <!-- Page Title -->
+  <h1 class="text-center text-2xl font-semibold mb-6">Cart</h1>
+
+  <!-- Cart Section -->
+  <div class="lg:grid lg:grid-cols-3 lg:gap-6 px-4">
+    
+    <!-- Left: Cart Items -->
+    <div class="lg:col-span-2 bg-white border  border-gray-200  rounded-lg p-4">
+      <!-- Desktop Table View -->
+      <div class="hidden lg:block">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr class="border-b  border-gray-200 ">
+              <th class="text-left py-2">PRODUCT</th>
+              <th class="text-right py-2">TOTAL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b  border-gray-200 ">
+              <td class="py-4 flex items-start space-x-4">
+                <img src="assets/redgirl.png" alt="Product" class="w-16 h-24 object-cover">
+                <div>
+                  <h2 class="text-sm font-medium">Accelarisque</h2>
+                  <p class="text-xs text-gray-500">₹ 119.00</p>
+                  <p class="text-xs text-gray-400 mt-1">
+                    Yonsequat mauris nunc congue nisi. Dignissim enim sit amet venenatis urna cursus eget. Ultricies mi…
+                  </p>
+                  <p class="text-xs font-medium mt-2">Vendor:</p>
+                  <select class="border border-gray-300 rounded px-2 py-1 text-sm mt-1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                  </select>
+                  <div>
+                    <button class="text-xs text-gray-500 underline mt-2">Remove item</button>
+                  </div>
+                </div>
+              </td>
+              <td class="text-right align-top">₹ 119.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mobile Stacked View -->
+      <div class="lg:hidden">
+        <div class="flex items-start space-x-4">
+          <img src="assets/redgirl.png" alt="Product" class="w-16 h-24 object-cover">
+          <div class="flex-1">
+            <h2 class="text-sm font-medium">Accelarisque</h2>
+            <p class="text-xs text-gray-500">₹ 119.00</p>
+            <p class="text-xs text-gray-400 mt-1">
+              Yonsequat mauris nunc congue nisi. Dignissim enim sit amet venenatis urna cursus eget. Ultricies mi…
+            </p>
+            <div class="mt-2">
+              <label class="sr-only">Quantity</label>
+              <select class="border border-gray-300 rounded px-2 py-1 text-sm">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+            </div>
+            <button class="text-xs text-gray-500 underline mt-2">Remove</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Cart Totals -->
+    <div class="bg-gray-200 border border-gray-200 rounded-lg p-4 mt-6 lg:mt-0">
+      <h2 class="font-semibold text-lg mb-4">CART TOTALS</h2>
+      <input type="text" placeholder="Add coupon" class="border border-gray-300 rounded px-4 py-2 w-full mb-4">
+      <div class="flex justify-between items-center text-sm font-medium mb-4">
+        <span>Estimated total</span>
+        <span>₹ 119.00</span>
+      </div>
+      <button class="bg-[#2A2344] text-white w-full py-2 rounded">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Recommendations -->
+  <div class="px-4 mt-10">
+    <h2 class="text-lg font-semibold mb-4">You may be interested in...</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Product 1 -->
+      <div class="text-center">
+        <img src="assets/im1.png" alt="Product 1" class="mx-auto mb-2">
+        <p class="text-sm">Accelarisque seda</p>
+        <p class="text-base font-medium">₹ 1,119.00</p>
+        <button class="bg-[#2A2344] text-white text-sm px-4 py-2 mt-2 rounded-full">Add to cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="text-center">
+        <img src="assets/im2.png" alt="Product 2" class="mx-auto mb-2">
+        <p class="text-sm">Buda Donec</p>
+        <p class="text-base font-medium">₹ 320.00</p>
+        <button class="bg-[#2A2344] text-white text-sm px-4 py-2 mt-2 rounded-full">Add to cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="text-center">
+        <img src="assets/im3.png" alt="Product 3" class="mx-auto mb-2">
+        <p class="text-sm">Sed lorem</p>
+        <p class="text-base font-medium">₹ 250.00</p>
+        <button class="bg-[#2A2344] text-white text-sm px-4 py-2 mt-2 rounded-full">Add to cart</button>
+      </div>
+    </div>
+  </div>

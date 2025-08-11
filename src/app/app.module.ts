@@ -19,13 +19,15 @@ import { getStorage, provideStorage } from '@angular/fire/storage';
 import { environment } from '../../environments/environment';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

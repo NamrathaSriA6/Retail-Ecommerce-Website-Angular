@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { CartComponent } from './pages/cart/cart.component';
 
 const routes: Routes = [
-  { path: '', component: ProductDetailComponent }, // default page
-  { path: 'home', component: HomeComponent }       // home page moved to /home
+  { path: '', component: HomeComponent },           // Home page (default)
+  { path: 'product', component: ProductDetailComponent }, // Product detail page
+  { path: 'cart', component: CartComponent }        // Cart page
 ];
 
 @NgModule({
