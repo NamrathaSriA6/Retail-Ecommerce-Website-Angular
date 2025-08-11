@@ -5,6 +5,7 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
 import { CartComponent } from './pages/cart/cart.component';
 import { AboutComponent } from './pages/about/about.component';
 import { AccessoriesComponent } from './pages/accessories/accessories.component';
+import { AudioComponent } from './pages/audio/audio.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'product', component: ProductDetailComponent }, // Product detail page
   { path: 'cart', component: CartComponent },        // Cart page
   { path: 'about', component:AboutComponent},
-  { path:  'accessories', component:AccessoriesComponent}
+  { path:  'accessories', component:AccessoriesComponent},
+  {path: 'audio', component:AudioComponent}
 ];
 
 @NgModule({

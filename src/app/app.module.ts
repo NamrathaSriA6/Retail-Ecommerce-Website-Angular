@@ -22,6 +22,7 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
 import { CartComponent } from './pages/cart/cart.component';
 import { AboutComponent } from './pages/about/about.component';
 import { AccessoriesComponent } from './pages/accessories/accessories.component';
+import { AudioComponent } from './pages/audio/audio.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { AccessoriesComponent } from './pages/accessories/accessories.component'
     ProductDetailComponent,
     CartComponent,
     AboutComponent,
-    AccessoriesComponent
+    AccessoriesComponent,
+    AudioComponent
   ],
   imports: [
     BrowserModule,
