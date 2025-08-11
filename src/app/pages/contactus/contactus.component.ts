@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-contactus',
   standalone: false,
   templateUrl: './contactus.component.html',
-  styleUrl: './contactus.component.css'
+  styleUrls: ['./contactus.component.css']
 })
 export class ContactusComponent {
   mail = "support@yourstore.com";

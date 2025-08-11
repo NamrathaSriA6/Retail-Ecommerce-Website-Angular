@@ -79,7 +79,7 @@ export class LoginComponent {
         } else {
           localStorage.removeItem('rememberedEmail');
         }
-        this.router.navigate(['/pages/contact']);
+        this.router.navigate(['/pages/contactus']);
       })
 
       .catch(err => {

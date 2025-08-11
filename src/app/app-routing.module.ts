@@ -5,6 +5,11 @@ import { SignupComponent } from './auth/signup/signup.component';
 import { ForgetpasswordComponent } from './auth/forgetpassword/forgetpassword.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { PagesComponent } from './pages/pages.component';
+import { ShopComponent } from './pages/shop/shop.component';
+import { WishlistComponent } from './pages/wishlist/wishlist.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { BestdealsComponent } from './pages/bestdeals/bestdeals.component';
+import { NewproductsComponent } from './pages/newproducts/newproducts.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
@@ -14,12 +19,15 @@ const routes: Routes = [
   { path: 'pages',
     component: PagesComponent,
     children: [
-      { path: 'contact', component: ContactusComponent },
-      { path: '', redirectTo: 'contact', pathMatch: 'full' }
+      { path: 'contactus', component: ContactusComponent },
+      { path: 'shop', component: ShopComponent },
+      { path: 'wishlist', component: WishlistComponent },
+      { path: 'blog', component: BlogComponent },
+      { path: 'bestdeals', component: BestdealsComponent },
+      { path: 'newproduct', component: NewproductsComponent },
+      { path: '', redirectTo: 'contactus', pathMatch: 'full' }
     ]
   },
-  
-  
 ];
 
 @NgModule({

@@ -1,0 +1,95 @@
+<div class="max-w-[100rem] mx-auto px-2 sm:px-4 py-6">
+  <!-- Page title -->
+  <h2 class="text-2xl font-semibold mb-2">Wishlist</h2>
+  <p class="text-gray-500 text-sm mb-4">Home / Wishlist</p>
+
+  <!-- Desktop Table -->
+  <div class="hidden sm:block overflow-x-auto border rounded-lg shadow-sm">
+    <table class="min-w-full bg-white text-sm">
+      <thead>
+        <tr class="bg-gray-100 text-left font-medium text-gray-700">
+          <th class="px-4 py-3"></th>
+          <th class="px-4 py-3">Product name</th>
+          <th class="px-4 py-3">Unit price</th>
+          <th class="px-4 py-3">Stock status</th>
+          <th class="px-4 py-3"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of wishlist" class="border-t">
+          <!-- Remove icon -->
+          <td class="px-4 py-3 text-center">
+            <button (click)="removeItem(item.id)" class="text-red-500 hover:text-red-700">
+              <i class="fas fa-times"></i>
+            </button>
+          </td>
+
+          <!-- Product -->
+          <td class="px-4 py-3 flex items-center space-x-3">
+            <img [src]="item.image" [alt]="item.name" class="w-14 h-14 object-cover border rounded">
+            <span class="text-gray-800">{{ item.name }}</span>
+          </td>
+
+          <!-- Price -->
+          <td class="px-4 py-3 text-gray-800">₹{{ item.price.toFixed(2) }}</td>
+
+          <!-- Stock -->
+          <td class="px-4 py-3">
+            <span [ngClass]="item.inStock ? 'text-green-600 font-medium' : 'text-red-500 font-medium'">
+              {{ item.inStock ? 'In Stock' : 'Out of Stock' }}
+            </span>
+          </td>
+
+          <!-- Add to Cart -->
+          <td class="px-4 py-3">
+            <button 
+              (click)="addToCart(item)" 
+              class="bg-gray-900 text-white px-4 py-2 text-sm rounded hover:bg-black">
+              Add To Cart
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile Cards -->
+  <div class="space-y-4 sm:hidden">
+    <div *ngFor="let item of wishlist" class="border rounded-lg p-3 bg-white shadow-sm">
+      <div class="flex items-center justify-between">
+        <span class="font-medium text-gray-800">{{ item.name }}</span>
+        <button (click)="removeItem(item.id)" class="text-red-500 hover:text-red-700">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+
+      <div class="flex items-center mt-2 space-x-3">
+        <img [src]="item.image" [alt]="item.name" class="w-16 h-16 object-cover border rounded">
+        <div class="flex-1">
+          <p class="text-sm text-gray-600">₹{{ item.price.toFixed(2) }}</p>
+          <p class="text-sm" [ngClass]="item.inStock ? 'text-green-600 font-medium' : 'text-red-500 font-medium'">
+            {{ item.inStock ? 'In Stock' : 'Out of Stock' }}
+          </p>
+        </div>
+      </div>
+
+      <button 
+        (click)="addToCart(item)" 
+        class="w-full bg-gray-900 text-white px-4 py-2 mt-3 text-sm rounded hover:bg-black">
+        Add To Cart
+      </button>
+    </div>
+  </div>
+
+  <!-- Share section -->
+  <div class="mt-6">
+    <p class="mb-2 font-medium">Share on:</p>
+    <div class="flex space-x-2">
+      <a href="#" class="bg-[#3b5998] p-2 rounded text-white"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="bg-[#55acee] p-2 rounded text-white"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="bg-[#cb2027] p-2 rounded text-white"><i class="fab fa-pinterest-p"></i></a>
+      <a href="#" class="bg-[#ff6600] p-2 rounded text-white"><i class="fas fa-envelope"></i></a>
+      <a href="#" class="bg-[#25D366] p-2 rounded text-white"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</div>

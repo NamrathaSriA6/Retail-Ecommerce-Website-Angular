@@ -1,0 +1,117 @@
+<div class="w-full py-6 px-2 sm:px-4 md:px-6">
+  <div class="flex flex-col md:flex-row w-full gap-4">
+    <!-- Sidebar Filters -->
+    <aside class="sticky top-[100px] self-start w-full md:w-[390px] px-2 hidden md:block">
+        <h1 class="text-3xl font-semibold mb-4">Shop</h1>
+        
+      <h2 class="text-mg text-gray-600 mb-6">Home / Shop</h2>
+      <h2 class="text-xl font-semibold mb-6">Filters</h2>
+
+      <!-- Price Filter -->
+      <div class="mb-8">
+        <h3 class="text-lg font-semibold mb-2">Price</h3>
+        <input type="range" min="0" max="1200" [(ngModel)]="maxPrice" class="w-full accent-black h-[4px]" />
+        <div class="flex justify-between mt-2">
+          <div class="border px-4 py-2 text-sm">₹{{ minPrice }}</div>
+          <div class="border px-4 py-2 text-sm">₹{{ maxPrice }}</div>
+        </div>
+      </div>
+
+      <!-- Brands -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-2">Brands</h3>
+        <ul class="text-lg space-y-2">
+          <li><input type="checkbox" class="mr-2" /> Nike</li>
+          <li><input type="checkbox" class="mr-2" /> Fastrack</li>
+          <li><input type="checkbox" class="mr-2" /> Boat</li>
+          <li><input type="checkbox" class="mr-2" /> Philips</li>
+          <li><input type="checkbox" class="mr-2" /> Samsung</li>
+        </ul>
+      </div>
+
+      <!-- Clothing -->
+      <div class="mb-6">
+        <h3 class="text-lg font-semibold mb-2">Clothing</h3>
+        <ul class="text-lg space-y-2">
+          <li><input type="checkbox" class="mr-2" /> Bodycon</li>
+          <li><input type="checkbox" class="mr-2" /> Gym wear</li>
+          <li><input type="checkbox" class="mr-2" /> Kurta</li>
+        </ul>
+      </div>
+
+      <!-- Color -->
+      <div class="mb-4">
+        <h3 class="text-lg font-semibold mb-2">Color</h3>
+        <ul class="text-lg mt-1 space-y-1">
+          <li><input type="checkbox" class="mr-2" /> Red</li>
+          <li><input type="checkbox" class="mr-2" /> Blue</li>
+          <li><input type="checkbox" class="mr-2" /> Black</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Product Grid -->
+    <section class="w-full px-2">
+      <!-- Top Sorting Bar -->
+      <div class="w-full flex justify-between items-center mb-6 flex-wrap">
+        <p class="text-xs sm:text-sm text-gray-500 whitespace-nowrap">
+            Showing {{ filteredProducts.length }} of {{ products.length }} results
+        </p>
+
+        <div class="flex items-center gap-2 text-sm sm:text-sm text-xs mt-2 sm:mt-0">
+            <span class="text-gray-500 whitespace-nowrap">Sort By:</span>
+            <select class="border px-2 py-1 text-xs sm:text-sm">
+            <option>Default sorting</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            </select>
+        </div>
+        </div>
+
+
+      <!-- Product Cards Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+  <div
+    *ngFor="let product of filteredProducts"
+    class="border p-4 shadow-sm relative group transition-all duration-300 hover:shadow-lg hover:-translate-y-1 min-h-[420px]"
+  >
+    <!-- Product Image -->
+    <img
+      [src]="product.image"
+      alt="{{ product.name }}"
+      class="w-full h-80 object-contain mx-auto mb-4 transition-transform duration-300 group-hover:scale-105"
+    />
+
+    <!-- Product Info -->
+    <div class="text-left">
+      <h4 class="font-semibold text-lg mb-1">{{ product.name }}</h4>
+      <p class="text-gray-600 text-base mb-4">{{ product.price }}</p>
+
+      <!-- Action Buttons (Always Visible) -->
+      <div class="flex items-center space-x-2 sm:space-x-3 mt-2">
+        <button class="bg-gray-900 text-white p-2 hover:bg-black">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+        <button class="bg-gray-900 text-white p-2 hover:bg-black">
+          <i class="fas fa-heart"></i>
+        </button>
+        <button class="bg-gray-900 text-white p-2 hover:bg-black">
+          <i class="fas fa-sync"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <!-- Pagination -->
+      <div class="flex justify-center mt-10 space-x-2 text-sm">
+        <button class="border px-3 py-1 hover:bg-gray-200">&lt;</button>
+        <button class="border px-3 py-1 bg-black text-white">1</button>
+        <button class="border px-3 py-1 hover:bg-gray-200">2</button>
+        <button class="border px-3 py-1 hover:bg-gray-200">3</button>
+        <button class="border px-3 py-1 hover:bg-gray-200">...</button>
+        <button class="border px-3 py-1 hover:bg-gray-200">&gt;</button>
+      </div>
+    </section>
+  </div>
+</div>

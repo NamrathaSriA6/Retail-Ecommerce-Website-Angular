@@ -24,6 +24,11 @@ import { PagesComponent } from './pages/pages.component';
 import { NavbarComponent } from './pages/navbar/navbar.component';
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { FooterComponent } from './pages/footer/footer.component';
+import { ShopComponent } from './pages/shop/shop.component';
+import { WishlistComponent } from './pages/wishlist/wishlist.component';
+import { BlogComponent } from './pages/blog/blog.component';
+import { BestdealsComponent } from './pages/bestdeals/bestdeals.component';
+import { NewproductsComponent } from './pages/newproducts/newproducts.component';
 
 
 @NgModule({
@@ -35,7 +40,12 @@ import { FooterComponent } from './pages/footer/footer.component';
     PagesComponent,
     NavbarComponent,
     ContactusComponent,
-    FooterComponent
+    FooterComponent,
+    ShopComponent,
+    WishlistComponent,
+    BlogComponent,
+    BestdealsComponent,
+    NewproductsComponent
   ],
   imports: [
     BrowserModule,

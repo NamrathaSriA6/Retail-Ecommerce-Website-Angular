@@ -9,14 +9,14 @@
     </div>
 
     <!-- Navigation Links (Only visible on lg and above) -->
-    <div class="hidden lg:flex space-x-6 text-gray-700 text-sm font-medium">
+    <div class="hidden lg:flex space-x-16 text-gray-700 text-sm font-normal">
       <a href="#" class="hover:text-red-500">Home</a>
-      <a href="#" class="hover:text-red-500">Shop</a>
-      <a href="#" class="hover:text-red-500">New Products</a>
-      <a href="#" class="hover:text-red-500">Best Deals</a>
-      <a href="#" class="hover:text-red-500">Blog</a>
+      <a href="/pages/shop" class="hover:text-red-500">Shop</a>
+      <a href="/pages/newproduct" class="hover:text-red-500">New Products</a>
+      <a href="/pages/bestdeals" class="hover:text-red-500">Best Deals</a>
+      <a href="/pages/blog" class="hover:text-red-500">Blog</a>
       <a href="#" class="hover:text-red-500">About Us</a>
-      <a href="/pages/contactus" class="hover:text-red-500">Contact Us</a>
+      <a routerLink="/pages/contactus" class="hover:text-red-500">Contact Us</a>
     </div>
 
     <!-- Icons + Hamburger -->
@@ -28,10 +28,14 @@
       </button>
 
       <!-- Heart Icon -->
-      <i class="far fa-heart cursor-pointer"></i>
+      <a routerLink="/pages/wishlist" class="cursor-pointer">
+        <i class="far fa-heart cursor-pointer"></i>
+      </a>
 
       <!-- User Icon -->
+       <a routerLink="/login" class="cursor-pointer">
       <i class="far fa-user cursor-pointer"></i>
+      </a>
 
       <!-- Cart Icon with badge -->
       <div class="relative cursor-pointer">
