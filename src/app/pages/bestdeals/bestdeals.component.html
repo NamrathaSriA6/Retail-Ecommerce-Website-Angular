@@ -62,14 +62,14 @@
       <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
         <div
           *ngFor="let product of filteredProducts"
-          class="border p-4 shadow-sm relative group transition-all duration-300 hover:shadow-lg hover:-translate-y-1 min-h-[420px]"
+          class="border p-4 shadow-sm relative group transition-all duration-300 hover:shadow-lg hover:-translate-y-1 min-h-[350px] sm:min-h-[420px]"
         >
           <!-- Image -->
           <div class="relative">
             <img
               [src]="product.image"
               alt="{{ product.name }}"
-              class="w-full h-80 object-contain mx-auto mb-4 transition-transform duration-300 group-hover:scale-105"
+              class="w-full h-48 sm:h-80 object-contain mx-auto mb-4 transition-transform duration-300 group-hover:scale-105"
             />
             <span
               *ngIf="product.sale"
