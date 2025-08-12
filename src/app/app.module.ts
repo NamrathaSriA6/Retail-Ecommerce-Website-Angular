@@ -23,6 +23,40 @@ import { CartComponent } from './pages/cart/cart.component';
 import { AboutComponent } from './pages/about/about.component';
 import { AccessoriesComponent } from './pages/accessories/accessories.component';
 import { AudioComponent } from './pages/audio/audio.component';
+import { CameraComponent } from './pages/camera/camera.component';
+import { ChairComponent } from './pages/chair/chair.component';
+import { LaptopComponent } from './pages/laptop/laptop.component';
+import { GirlComponent } from './pages/girl/girl.component';
+import { BoyComponent } from './pages/boy/boy.component';
+import { RorbiComponent } from './pages/rorbi/rorbi.component';
+import { MariusComponent } from './pages/marius/marius.component';
+import { PulvinarComponent } from './pages/pulvinar/pulvinar.component';
+import { FusceComponent } from './pages/fusce/fusce.component';
+import { FreezerComponent } from './pages/freezer/freezer.component';
+import { SoundbarComponent } from './pages/soundbar/soundbar.component';
+import { TechbudsComponent } from './pages/techbuds/techbuds.component';
+import { ThunderComponent } from './pages/thunder/thunder.component';
+import { VariusComponent } from './pages/varius/varius.component';
+import { WatchComponent } from './pages/watch/watch.component';
+import { BluesofaComponent } from './pages/bluesofa/bluesofa.component';
+import { PhaseComponent } from './pages/phase/phase.component';
+import { YellowsofaComponent } from './pages/yellowsofa/yellowsofa.component';
+import { BrownsofaComponent } from './pages/brownsofa/brownsofa.component';
+import { AppleComponent } from './pages/apple/apple.component';
+import { ChairuComponent } from './pages/chairu/chairu.component';
+import { SedtempuComponent } from './pages/sedtempu/sedtempu.component';
+import { DignissimComponent } from './pages/dignissim/dignissim.component';
+import { PaqueComponent } from './pages/paque/paque.component';
+import { BlackgownComponent } from './pages/blackgown/blackgown.component';
+import { ShoesComponent } from './pages/shoes/shoes.component';
+import { ChainnComponent } from './pages/chainn/chainn.component';
+import { EarringsComponent } from './pages/earrings/earrings.component';
+import { EarplugsComponent } from './pages/earplugs/earplugs.component';
+import { RadioComponent } from './pages/radio/radio.component';
+import { PowerbankComponent } from './pages/powerbank/powerbank.component';
+import { CamComponent } from './pages/cam/cam.component';
+import { HeadsetComponent } from './pages/headset/headset.component';
+import { CorbiComponent } from './pages/corbi/corbi.component';
 
 
 @NgModule({
@@ -33,7 +67,41 @@ import { AudioComponent } from './pages/audio/audio.component';
     CartComponent,
     AboutComponent,
     AccessoriesComponent,
-    AudioComponent
+    AudioComponent,
+    CameraComponent,
+    ChairComponent,
+    LaptopComponent,
+    GirlComponent,
+    BoyComponent,
+    RorbiComponent,
+    MariusComponent,
+    PulvinarComponent,
+    FusceComponent,
+    FreezerComponent,
+    SoundbarComponent,
+    TechbudsComponent,
+    ThunderComponent,
+    VariusComponent,
+    WatchComponent,
+    BluesofaComponent,
+    PhaseComponent,
+    YellowsofaComponent,
+    BrownsofaComponent,
+    AppleComponent,
+    ChairuComponent,
+    SedtempuComponent,
+    DignissimComponent,
+    PaqueComponent,
+    BlackgownComponent,
+    ShoesComponent,
+    ChainnComponent,
+    EarringsComponent,
+    EarplugsComponent,
+    RadioComponent,
+    PowerbankComponent,
+    CamComponent,
+    HeadsetComponent,
+    CorbiComponent
   ],
   imports: [
     BrowserModule,
