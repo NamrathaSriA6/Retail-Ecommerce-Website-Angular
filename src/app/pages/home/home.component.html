@@ -113,53 +113,69 @@
 </div>
 
 
-
+<!--3d-->
 <div class="grid grid-cols-3 gap-6 p-4 text-center">
   <!-- Accessories -->
   <div class="flex flex-col items-center space-y-2">
+    <a [routerLink]="['/accessories']" class="img-link">
     <img src="assets/a.png" alt="Accessories" class="w-[65px] h-[65px] opacity-100 rotate-0">
+    </a>
     <span class="text-sm">Accessories</span>
   </div>
 
   <!-- Audio -->
   <div class="flex flex-col items-center space-y-2">
+    <a [routerLink]="['/audio']" class="img-link">
     <img src="assets/b.png" alt="Audio" class="w-[65px] h-[65px] opacity-100 rotate-0">
+    </a>
     <span class="text-sm">Audio</span>
   </div>
 
   <!-- Cameras -->
   <div class="flex flex-col items-center space-y-2">
+    <a [routerLink]="['/camera']" class="img-link">
     <img src="assets/c.png" alt="Cameras" class="w-[65px] h-[65px] opacity-100 rotate-0">
+    </a>
     <span class="text-sm">Cameras</span>
   </div>
 
   <!-- Chair -->
   <div class="flex flex-col items-center space-y-2">
+    <a [routerLink]="['/chair']" class="img-link">
     <img src="assets/d.png" alt="Chair" class="w-[65px] h-[65px] opacity-100 rotate-0">
+    </a>
     <span class="text-sm">Chair</span>
   </div>
 
   <!-- Computer & Laptop -->
   <div class="flex flex-col items-center space-y-2">
+    <a [routerLink]="['/laptop']" class="img-link">
     <img src="assets/e.png" alt="Computer & Laptop" class="w-[65px] h-[65px] opacity-100 rotate-0">
+    </a>
     <span class="text-sm text-center">Computer &<br>Laptop</span>
   </div>
 
   <!-- Girl's Collection -->
   <div class="flex flex-col items-center space-y-2">
+    <a [routerLink]="['/girl']" class="img-link">
     <img src="assets/f.png" alt="Girl's Collection" class="w-[65px] h-[65px] opacity-100 rotate-0">
+    </a>
     <span class="text-sm text-center">Girl's Collecti<br>on</span>
   </div>
 
   <!-- Men's Collection -->
   <div class="flex flex-col items-center space-y-2">
+    <a [routerLink]="['/boy']" class="img-link">
     <img src="assets/g.png" alt="Men's Collection" class="w-[65px] h-[65px] opacity-100 rotate-0">
+    </a>
     <span class="text-sm text-center">Men's Collecti<br>on</span>
   </div>
 
   <!-- New Arrivals -->
   <div class="flex flex-col items-center space-y-2">
+    <a [routerLink]="['/girl']" class="img-link">
     <img src="assets/h.png" alt="New Arrivals" class="w-[65px] h-[65px] opacity-100 rotate-0">
+    </a>
     <span class="text-sm">New Arrivals</span>
   </div>
 </div>
@@ -203,7 +219,9 @@
   <!-- Product Card -->
   <div class="bg-[#F4FFF4] border border-gray-500 rounded p-2 flex items-center gap-5">
     <div>
+    <a [routerLink]="['/rorbi']" class="img-link">
     <img src="assets/tv2.png" alt="Rorbi" class="w-[135px] h-[135px] object-cover rounded" />
+    </a>
     </div>
     <div>
       <p class="text-sm font-medium text-gray-800">Rorbi</p>
@@ -238,7 +256,9 @@
 
   <!-- Product Image -->
   <div class="flex justify-center my-4">
+    <a [routerLink]="['/freezer']" class="img-link">
     <img src="assets/fridge.png" alt="Freezer" class="h-[300px] w-[300px] object-contain" />
+    </a>
   </div>
 
   <!-- Product Info -->
@@ -292,7 +312,9 @@
 
   <!-- Product Image -->
   <div class="flex justify-center my-4">
+    <a [routerLink]="['/soundbar']" class="img-link">
     <img src="assets/soundbar.png" alt="soundbar" class="h-[300px] w-[300px] object-contain" />
+    </a>
   </div>
 
   <!-- Product Info -->
@@ -346,7 +368,9 @@
 
   <!-- Product Image -->
   <div class="flex justify-center my-4">
+    <a [routerLink]="['/techbuds']" class="img-link">
     <img src="assets/techbuds.png" alt="techbuds" class="h-[300px] w-[300px] object-contain" />
+    </a>
   </div>
 
   <!-- Product Info -->
@@ -400,7 +424,9 @@
 
   <!-- Product Image -->
   <div class="flex justify-center my-4">
+    <a [routerLink]="['/thunder']" class="img-link">
     <img src="assets/cooler.png" alt="Freezer" class="h-[300px] w-[300px] object-contain" />
+    </a>
   </div>
 
   <!-- Product Info -->
@@ -521,7 +547,9 @@
   <div class="grid grid-cols-2 gap-4">
     <!-- Product 1 -->
     <div class="text-center">
+      <a [routerLink]="['/rorbi']" class="img-link">
       <img src="assets/item1.png" alt="Product 1" class="mx-auto w-20 h-20 object-contain" />
+      </a>
       <div class="bg-[#f4f9fc] w-[170px] h-[120px] rounded p-3">
       <h3 class="mt-2 text-sm font-medium">Rorbi</h3>
       <p class="text-xs text-gray-500">₹79.00</p>
@@ -532,7 +560,9 @@
     <!-- Product 2 -->
     <div class="text-center relative">
       <span class="absolute top-0 left-0 bg-black text-white text-[10px] px-2 py-[2px] ">Sale</span>
+      <a [routerLink]="['/cam']" class="img-link">
       <img src="assets/item2.png" alt="Product 2" class="mx-auto w-20 h-20 object-contain" />
+      </a>
       <div class="bg-[#f4f9fc] w-[170px] h-[120px] rounded p-3">
       <h3 class="mt-2 text-sm font-medium">Marius</h3>
       <span class="text-xs text-gray-500 line-through pr-2">₹55.00 <span class="text-black line-through"></span></span>
@@ -543,7 +573,9 @@
 
     <!-- Product 3 -->
     <div class="text-center">
+      <a [routerLink]="['/pulvinar']" class="img-link">
       <img src="assets/item3.png" alt="Product 3" class="mx-auto w-20 h-20 object-contain" />
+      </a>
       <div class="bg-[#f4f9fc] w-[170px] h-[120px] rounded p-3">
       <h3 class="mt-2 text-sm font-medium">Pulvinar</h3>
       <p class="text-xs text-gray-500">₹89.00</p>
@@ -553,7 +585,9 @@
 
     <!-- Product 4 -->
     <div class="text-center">
+      <a [routerLink]="['/fusce']" class="img-link">
       <img src="assets/item4.png" alt="Product 4" class="mx-auto w-20 h-20 object-contain" />
+      </a>
       <div class="bg-[#f4f9fc] w-[170px] h-[120px] rounded p-3">
       <h3 class="mt-2 text-sm font-medium">Fusce</h3>
       <span class="text-xs text-gray-500 line-through pr-2">₹100.00</span>
@@ -582,7 +616,9 @@
   <div class="grid grid-cols-2 gap-4 p-4">
     <!-- Product 1 -->
     <div class="flex flex-col items-center border border-gray-200 p-2 rounded-lg">
+      <a [routerLink]="['/rorbi']" class="img-link">
       <img src="assets/Rorbi.png" alt="Rorbi" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Rorbi</p>
       <p class="text-sm font-semibold">€79.00</p>
       <button class="mt-2 bg-black text-white text-xs px-3 py-1 rounded">Add to cart</button>
@@ -591,7 +627,9 @@
     <!-- Product 2 - Sale -->
     <div class=" relative flex flex-col items-center border border-gray-200 p-2 rounded-lg ">
       <span class="tt top-0 left-0 bg-black text-white text-[10px] px-1 py-0.5 rounded">Sale</span>
+      <a [routerLink]="['/marius']" class="img-link">
       <img src="assets/malvius.png" alt="Marius" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Marius</p>
       <p class="text-xs text-gray-400 line-through">€55.00</p>
       <p class="text-sm font-semibold">€27.00</p>
@@ -600,7 +638,9 @@
 
     <!-- Product 3 -->
     <div class="flex flex-col items-center border border-gray-200 p-2 rounded-lg">
+      <a [routerLink]="['/pulvinar']" class="img-link">
       <img src="assets/pulvinar.png" alt="Pulvinar" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Pulvinar</p>
       <p class="text-sm font-semibold">€89.00</p>
       <button class="mt-2 bg-black text-white text-xs px-3 py-1 rounded">Add to cart</button>
@@ -608,7 +648,9 @@
 
     <!-- Product 4 -->
     <div class="flex flex-col items-center border border-gray-200 p-2 rounded-lg">
+      <a [routerLink]="['/fusce']" class="img-link">
       <img src="assets/fuscue.png" alt="Fusce" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Fusce</p>
       <p class="text-xs text-gray-400 line-through">€100.00</p>
       <p class="text-sm font-semibold">€99.00</p>
@@ -618,7 +660,9 @@
     <!-- Product 5 - Sale -->
     <div class="relative flex flex-col items-center border border-gray-200 p-2 rounded-lg ">
       <span class="cd top-0 left-0 bg-black text-white text-[10px] px-1 py-0.5 rounded">Sale</span>
+      <a [routerLink]="['/varius']" class="img-link">
       <img src="assets/varius.png" alt="Morbi varius" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Morbi varius</p>
       <p class="text-xs text-gray-400 line-through">€55.00</p>
       <p class="text-sm font-semibold">€45.00</p>
@@ -646,7 +690,9 @@
     <!-- Product 1 - Sale -->
     <div class="flex flex-col items-center border border-gray-200 p-2 rounded-lg relative">
       <span class="absolute top-1 left-1 bg-black text-white text-[10px] px-1 py-0.5 rounded">Sale</span>
+      <a [routerLink]="['/chairu']" class="img-link">
       <img src="assets/chair.png" alt="Morbi pulvinar" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Morbi pulvinar</p>
       <p class="text-xs text-gray-400 line-through">₹78.00</p>
       <p class="text-sm font-semibold">₹49.00</p>
@@ -655,7 +701,9 @@
 
     <!-- Product 2 -->
     <div class="flex flex-col items-center border border-gray-200 p-2 rounded-lg">
+      <a [routerLink]="['/brownsofa']" class="img-link">
       <img src="assets/brownsofa.png" alt="Nunc tempus" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Nunc tempus</p>
       <p class="text-sm font-semibold">₹400.00</p>
       <button class="mt-2 bg-black text-white text-xs px-3 py-1 rounded">Add to cart</button>
@@ -663,7 +711,9 @@
 
     <!-- Product 3 -->
     <div class="flex flex-col items-center border border-gray-200 p-2 rounded-lg">
+      <a [routerLink]="['/apple']" class="img-link">
       <img src="assets/apple.png" alt="Nunc tempus phone" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Nunc tempus</p>
       <p class="text-sm font-semibold">₹87.00</p>
       <button class="mt-2 bg-black text-white text-xs px-3 py-1 rounded">Add to cart</button>
@@ -671,7 +721,9 @@
 
     <!-- Product 4 -->
     <div class="flex flex-col items-center border border-gray-200 p-2 rounded-lg">
+      <a [routerLink]="['/bluesofa']" class="img-link">
       <img src="assets/bluesofa.png" alt="Fusce nec" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Fusce nec</p>
       <p class="text-sm font-semibold">₹45.00</p>
       <button class="mt-2 bg-black text-white text-xs px-3 py-1 rounded">Add to cart</button>
@@ -679,7 +731,9 @@
 
     <!-- Product 5 -->
     <div class="flex flex-col  items-center border border-gray-200 p-2 rounded-lg ">
+      <a [routerLink]="['/chairu']" class="img-link">
       <img src="assets/tablewithchairs.png" alt="Phasellus" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Phasellus</p>
       <p class="text-sm font-semibold">₹200.00</p>
       <button class="mt-2 bg-black text-white text-xs px-3 py-1 rounded">Add to cart</button>
@@ -705,7 +759,9 @@
   <div class="grid grid-cols-2 gap-4 p-4">
     <!-- Product 1 -->
     <div class="flex flex-col items-center border border-gray-200 p-2 rounded-lg">
+      <a [routerLink]="['/sedtempu']" class="img-link">
       <img src="assets/sedtempu.png" alt="Sedtempu" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Sedtempu</p>
       <p class="text-sm font-semibold">₹440.00</p>
       <button class="mt-2 bg-black text-white text-xs px-3 py-1 rounded">Add to cart</button>
@@ -714,7 +770,9 @@
     <!-- Product 2 - Sale -->
     <div class="flex flex-col items-center border border-gray-200 p-2 rounded-lg relative">
       <span class="absolute top-1 left-1 bg-black text-white text-[10px] px-1 py-0.5 rounded">Sale</span>
+      <a [routerLink]="['/dignissim']" class="img-link">
       <img src="assets/dignissim.png" alt="Dignissim" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Dignissim</p>
       <p class="text-xs text-gray-400 line-through">₹100.00</p>
       <p class="text-sm font-semibold">₹60.00</p>
@@ -723,7 +781,9 @@
 
     <!-- Product 3 -->
     <div class="flex flex-col items-center border border-gray-200 p-2 rounded-lg">
+      <a [routerLink]="['/paque']" class="img-link">
       <img src="assets/paque.png" alt="Paque" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Paque</p>
       <p class="text-sm font-semibold">₹89.00</p>
       <button class="mt-2 bg-black text-white text-xs px-3 py-1 rounded">Add to cart</button>
@@ -731,7 +791,9 @@
 
     <!-- Product 4 -->
     <div class="flex flex-col items-center border border-gray-200 p-2 rounded-lg">
+      <a [routerLink]="['/blackgown']" class="img-link">
       <img src="assets/blackgown.png" alt="Tor at risus" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">tor at risus</p>
       <p class="text-sm font-semibold">₹159.00</p>
       <button class="mt-2 bg-black text-white text-xs px-3 py-1 rounded">Select options</button>
@@ -739,7 +801,9 @@
 
     <!-- Product 5 -->
     <div class="flex flex-col items-center border border-gray-200 p-2 rounded-lg ">
+      <a [routerLink]="['/product-detail']" class="img-link">
       <img src="assets/redgown.png" alt="Red justo" class="w-full h-24 object-cover mb-2">
+      </a>
       <p class="text-sm font-medium">Red justo</p>
       <p class="text-sm font-semibold">₹300.00</p>
       <button class="mt-2 bg-black text-white text-xs px-3 py-1 rounded">Add to cart</button>
@@ -872,7 +936,9 @@
         <div class="bg-white p-2 rounded-lg shadow-sm relative">
             <span class="sale-badge bg-black rounded-full text-white p-2 top-0 left-0">Sale</span>
             <div class="flex justify-center">
-                <img src="assets/malvius.png" alt="Marius" class="w-full h-auto rounded-lg mb-2">
+              <a [routerLink]="['/accessories']" class="img-link">
+                <img src="assets/marius.png" alt="Marius" class="w-full h-auto rounded-lg mb-2">
+                </a>
             </div>
             <p class="font-semibold text-sm">Marius</p>
             <p class="text-xs text-gray-500 line-through">₹58.00</p>
@@ -890,7 +956,9 @@
 
         <div class="bg-white p-2 rounded-lg shadow-sm">
             <div class="flex justify-center">
+              <a [routerLink]="['/corbi']" class="img-link">
                 <img src="assets/corbi.png" alt="Corbi pulvinar" class="w-full h-auto rounded-lg mb-2">
+                </a>
             </div>
             <p class="font-semibold text-sm">Corbi pulvinar</p>
             <p class="text-xs text-gray-500 line-through">₹65.00</p>
@@ -908,7 +976,9 @@
 
         <div class="bg-white p-2 rounded-lg shadow-sm">
             <div class="flex justify-center">
+              <a [routerLink]="['/headset']" class="img-link">
                 <img src="assets/headset.png" alt="Aliquam id quam" class="w-full h-auto rounded-lg mb-2">
+                </a>
             </div>
             <p class="font-semibold text-sm">Aliquam id quam</p>
             <p class="text-sm font-bold mt-2">₹44.00</p>
@@ -925,7 +995,9 @@
 
         <div class="bg-white p-2 rounded-lg shadow-sm">
             <div class="flex justify-center">
+              <a [routerLink]="['/cam']" class="img-link">
                 <img src="assets/cam.png" alt="Vestibulum ante" class="w-full h-auto rounded-lg mb-2">
+                </a>
             </div>
             <p class="font-semibold text-sm">Vestibulum ante</p>
             <p class="text-sm font-bold mt-2">₹56.00</p>
@@ -942,7 +1014,9 @@
 
         <div class="bg-white p-2 rounded-lg shadow-sm">
             <div class="flex justify-center">
+              <a [routerLink]="['/powerbank']" class="img-link">
                 <img src="assets/powerbank.png" alt="Pellentesque dign" class="w-full h-auto rounded-lg mb-2">
+                </a>
             </div>
             <p class="font-semibold text-sm">Pellentesque dign</p>
             <p class="text-sm font-bold mt-2">₹78.00</p>
@@ -960,7 +1034,9 @@
         <div class="bg-white p-2 rounded-lg shadow-sm relative">
             <span class="sale-badge bg-black rounded-full text-white p-2 top-0 left-0">Sale</span>
             <div class="flex justify-center">
+              <a [routerLink]="['/radio']" class="img-link">
                 <img src="assets/radio.png" alt="Fusce ullam" class="w-full h-auto rounded-lg mb-2">
+                </a>
             </div>
             <p class="font-semibold text-sm">Fusce ullam</p>
             <p class="text-xs text-gray-500 line-through">₹55.00</p>
@@ -979,7 +1055,9 @@
         <div class="bg-white p-2 rounded-lg shadow-sm relative">
             <span class="sale-badge">Sale</span>
             <div class="flex justify-center">
+              <a [routerLink]="['/earplugs']" class="img-link">
                 <img src="assets/earplugs.png" alt="Morbi pulvinar" class="w-full h-auto rounded-lg mb-2">
+                </a>
             </div>
             <p class="font-semibold text-sm">Morbi pulvinar</p>
             <p class="text-xs text-gray-500 line-through">₹78.00</p>
@@ -997,7 +1075,9 @@
 
         <div class="bg-white p-2 rounded-lg shadow-sm">
             <div class="flex justify-center">
+              <a [routerLink]="['/earrings']" class="img-link">
                 <img src="assets/earrings.png" alt="Erat scelerisqu" class="w-full h-auto rounded-lg mb-2">
+                </a>
             </div>
             <p class="font-semibold text-sm">Erat scelerisqu</p>
             <p class="text-sm font-bold mt-2">₹110.00</p>
@@ -1014,7 +1094,9 @@
         
         <div class="bg-white p-2 rounded-lg shadow-sm">
             <div class="flex justify-center">
+              <a [routerLink]="['/chainn']" class="img-link">
                 <img src="assets/chainn.png" alt="Accelerisqu redo" class="w-full h-auto rounded-lg mb-2">
+                </a>
             </div>
             <p class="font-semibold text-sm">Accelerisqu redo</p>
             <p class="text-sm font-bold mt-2">₹119.00</p>
@@ -1031,7 +1113,9 @@
 
         <div class="bg-white p-2 rounded-lg shadow-sm">
             <div class="flex justify-center">
+              <a [routerLink]="['/shoes']" class="img-link">
                 <img src="assets/shoes.png" alt="Redlo Sonews" class="w-full h-auto rounded-lg mb-2">
+                </a>
             </div>
             <p class="font-semibold text-sm">Redlo Sonews</p>
             <p class="text-xs text-gray-500 line-through">₹55.00</p>
