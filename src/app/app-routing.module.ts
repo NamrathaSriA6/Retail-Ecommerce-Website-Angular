@@ -40,6 +40,16 @@ import { EarplugsComponent } from './pages/earplugs/earplugs.component';
 import { EarringsComponent } from './pages/earrings/earrings.component';
 import { ChainnComponent } from './pages/chainn/chainn.component';
 import { ShoesComponent } from './pages/shoes/shoes.component';
+import { Chair2Component } from './pages/chair2/chair2.component';
+import { Chair3Component } from './pages/chair3/chair3.component';
+import { LapComponent } from './pages/lap/lap.component';
+import { Dress1Component } from './pages/dress1/dress1.component';
+import { RedComponent } from './pages/red/red.component';
+import { RedgownComponent } from './pages/redgown/redgown.component';
+import { Dress6Component } from './pages/dress6/dress6.component';
+import { Dress7Component } from './pages/dress7/dress7.component';
+import { CentComponent } from './pages/cent/cent.component';
+import { Earrings2Component } from './pages/earrings2/earrings2.component';
 
 
 
@@ -84,6 +94,17 @@ const routes: Routes = [
   {path: 'earrings', component:EarringsComponent},
   {path: 'chainn', component:ChainnComponent },
   {path: 'shoes', component:ShoesComponent},
+  {path: 'chair2', component:Chair2Component},
+  {path: 'chair3', component:Chair3Component},
+  {path: 'lap', component:LapComponent},
+  {path: 'dress1', component:Dress1Component},
+  {path: 'red', component:RedComponent},
+  {path: 'redgown', component:RedgownComponent},
+  {path: 'dress6', component:Dress6Component},
+  {path: 'dress7', component:Dress7Component},
+  {path: 'cent', component:CentComponent},
+  {path: 'earrings2',component:Earrings2Component}
+
 
 
 ];

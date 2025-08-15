@@ -57,6 +57,16 @@ import { PowerbankComponent } from './pages/powerbank/powerbank.component';
 import { CamComponent } from './pages/cam/cam.component';
 import { HeadsetComponent } from './pages/headset/headset.component';
 import { CorbiComponent } from './pages/corbi/corbi.component';
+import { Chair2Component } from './pages/chair2/chair2.component';
+import { Chair3Component } from './pages/chair3/chair3.component';
+import { LapComponent } from './pages/lap/lap.component';
+import { Dress1Component } from './pages/dress1/dress1.component';
+import { RedgownComponent } from './pages/redgown/redgown.component';
+import { RedComponent } from './pages/red/red.component';
+import { CentComponent } from './pages/cent/cent.component';
+import { Earrings2Component } from './pages/earrings2/earrings2.component';
+import { Dress6Component } from './pages/dress6/dress6.component';
+import { Dress7Component } from './pages/dress7/dress7.component';
 
 
 @NgModule({
@@ -101,7 +111,17 @@ import { CorbiComponent } from './pages/corbi/corbi.component';
     PowerbankComponent,
     CamComponent,
     HeadsetComponent,
-    CorbiComponent
+    CorbiComponent,
+    Chair2Component,
+    Chair3Component,
+    LapComponent,
+    Dress1Component,
+    RedgownComponent,
+    RedComponent,
+    CentComponent,
+    Earrings2Component,
+    Dress6Component,
+    Dress7Component
   ],
   imports: [
     BrowserModule,

@@ -16,6 +16,24 @@
   />
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        keyframes: {
+          scrollLeft: {
+            '0%': { transform: 'translateX(100%)' },
+            '100%': { transform: 'translateX(-100%)' },
+          },
+        },
+        animation: {
+          scrollLeft: 'scrollLeft 20s linear infinite',
+        },
+      },
+    },
+  }
+</script>
+
   
 
 </head>

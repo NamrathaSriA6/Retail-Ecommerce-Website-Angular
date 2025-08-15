@@ -1,0 +1,236 @@
+<div>
+
+<div class="max-w-7xl mx-auto p-4">
+  
+  <!-- Breadcrumb -->
+  <div class="text-sm text-gray-500 mb-4">
+    Home / Best Deals / <span class="text-black font-medium">Fusce Ullam</span>
+  </div>
+
+  <!-- Product Section -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+
+    <!-- Product Image -->
+    <div class="flex flex-col items-center">
+      <img src="assets/dress7.png" alt="techbuds" class="relative w-full max-w-sm object-cover">
+      <button class="absolute mt-3 text-gray-500 hover:text-black top-4 right-4">
+  <i class="fas fa-search"></i>
+</button>
+    </div>
+
+    <!-- Product Details -->
+    <div class="space-y-4">
+      <h1 class="text-2xl font-semibold">Fusce Ullam</h1>
+      <p class="text-xl font-bold text-gray-900">₹79.00</p>
+
+      <p class="text-gray-600 text-sm">
+        Yonsequat mauris nunc congue nisi.
+Dignissim enim sit amet venenatis urna
+cursus eget. Ultricies mi quis hendrerit
+dolor. Faucibus interdum posuere lorem
+ipsum dolor sit. Mauris pellentesque
+pulvinar pellentesque habitant morbi
+tristique senectus et.
+      </p>
+
+      <p class="text-sm text-green-600 font-medium">(In Stock)</p>
+
+      <!-- Quantity & Add to Cart -->
+      <div class="flex items-center space-x-3">
+        <div class="flex items-center border rounded">
+          <button class="px-3 py-1">-</button>
+          <input type="text" value="1" class="w-10 text-center border-l border-r outline-none">
+          <button class="px-3 py-1">+</button>
+        </div>
+        <button class="bg-purple-800 text-white px-4 py-2 rounded hover:bg-purple-900">Add to cart</button>
+        <button class="border p-2 rounded hover:bg-gray-100">♡</button>
+        <button class="border p-2 rounded hover:bg-gray-100">⟲</button>
+      </div>
+
+      <!-- Categories -->
+      <p class="text-sm text-gray-500">
+        Categories: <span class="text-black">Best Deals, Clothing</span>
+      </p>
+
+      <!-- Share -->
+      <div>
+  <p class="text-sm font-medium mb-2">Share</p>
+  <div class="flex space-x-3">
+    <!-- Facebook -->
+    <a href="#" class="border border-blue-600 text-blue-600 p-3 rounded hover:bg-blue-600 hover:text-white transition">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <!-- Twitter -->
+    <a href="#" class="border border-sky-500 text-sky-500 p-3 rounded hover:bg-sky-500 hover:text-white transition">
+      <i class="fab fa-twitter"></i>
+    </a>
+    <!-- Pinterest -->
+    <a href="#" class="border border-red-500 text-red-500 p-3 rounded hover:bg-red-500 hover:text-white transition">
+      <i class="fab fa-pinterest-p"></i>
+    </a>
+    <!-- LinkedIn -->
+    <a href="#" class="border border-blue-700 text-blue-700 p-3 rounded hover:bg-blue-700 hover:text-white transition">
+      <i class="fab fa-linkedin-in"></i>
+    </a>
+  </div>
+</div>
+
+
+      <!-- Tabs -->
+      <div class="border-b mt-6">
+        <nav class="flex space-x-6">
+          <button class="py-2 border-b-2 border-black font-medium">Description</button>
+          <button class="py-2 text-gray-500 hover:text-black">Reviews (0)</button>
+        </nav>
+      </div>
+
+      <!-- More Products -->
+      <div class="mt-4">
+        <h3 class="font-medium">More Products</h3>
+        <p class="text-gray-600 text-sm mt-2">
+          Yonsequat mauris nunc congue nisi.
+Dignissim enim sit amet venenatis urna
+cursus eget. Ultricies mi quis hendrerit
+dolor. Faucibus interdum posuere lorem
+ipsum dolor sit. Mauris pellentesque
+pulvinar pellentesque habitant morbi
+tristique senectus et.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+<div class="max-w-7xl mx-auto p-4">
+  <h2 class="text-center text-2xl font-semibold mb-6">You may also like...</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 justify-center ">
+    <!-- Product Card -->
+    <div class="border border-gray-200 p-4 flex flex-col items-center">
+      <a [routerLink]="['/blackgown']" class="img-link">
+      <img src="assets/blackgown.png" alt="Sed tempus" class="h-64 object-contain">
+      </a>
+      <h3 class="mt-4 text-lg font-medium">Sed orphus</h3>
+      <p class="text-gray-700">₹300.00</p>
+
+      <!-- Action Buttons -->
+      <div class="flex space-x-2 mt-4">
+        <button class="bg-purple-900 text-white p-3"><i class="fas fa-shopping-cart"></i></button>
+        <button class="bg-purple-900 text-white p-3"><i class="fas fa-heart"></i></button>
+        <button class="bg-purple-900 text-white p-3"><i class="fas fa-retweet"></i></button>
+      </div>
+    </div>
+
+    <!-- Product Card with Sale -->
+    <div class="border border-gray-200 p-4 flex flex-col items-center relative">
+      <span class="absolute top-2 right-2 bg-purple-900 text-white text-xs px-2 py-1 rounded">Sale</span>
+      <a [routerLink]="['/paque']" class="img-link">
+      <img src="assets/paque.png" alt="Mauris cursus" class="h-64 object-contain">
+      </a>
+      <h3 class="mt-4 text-lg font-medium">Paque</h3>
+      <p class="text-gray-400 line-through">₹599.00</p>
+      <p class="text-purple-900 font-bold">₹499.00</p>
+
+      <!-- Action Buttons -->
+      <div class="flex space-x-2 mt-4">
+        <button class="bg-purple-900 text-white p-3"><i class="fas fa-shopping-cart"></i></button>
+        <button class="bg-purple-900 text-white p-3"><i class="fas fa-heart"></i></button>
+        <button class="bg-purple-900 text-white p-3"><i class="fas fa-retweet"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto p-4">
+  <h2 class="text-center text-2xl font-semibold mb-6">Related products</h2>
+
+  <!-- Responsive grid: 2 columns on mobile, 5 on desktop -->
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+    
+    <!-- Product Card -->
+    <div class="border border-gray-200 flex flex-col items-center p-4 h-full">
+      <a [routerLink]="['/dignissim']" class="img-link">
+      <img src="assets/dignissim.png" alt="Eractelerisqu" class="w-full h-48 sm:h-56 lg:h-64 object-contain">
+      </a>
+      <h3 class="mt-4 text-sm sm:text-base font-medium text-center">Dignissim</h3>
+      <p class="text-gray-700 text-sm sm:text-base">₹136.00 – ₹142.00</p>
+      <div class="flex space-x-1 sm:space-x-2 mt-3">
+        <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-shopping-cart"></i></button>
+        <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-heart"></i></button>
+        <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-retweet"></i></button>
+      </div>
+    </div>
+
+    <!-- Product Card -->
+    <div class="border border-gray-200 flex flex-col items-center p-4 h-full">
+      <a [routerLink]="['/redgown']" class="img-link">
+      <img src="assets/redgown.png" alt="Sedtempu" class="w-full h-48 sm:h-56 lg:h-64 object-contain">
+      </a>
+      <h3 class="mt-4 text-sm sm:text-base font-medium text-center">redigo</h3>
+      <p class="text-gray-700 text-sm sm:text-base">₹440.00</p>
+      <div class="flex space-x-1 sm:space-x-2 mt-3">
+        <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-shopping-cart"></i></button>
+        <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-heart"></i></button>
+        <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-retweet"></i></button>
+      </div>
+    </div>
+
+    <!-- Product Card with Sale -->
+    <div class="border border-gray-200 flex flex-col items-center p-4 relative h-full">
+      <span class="absolute top-2 right-2 bg-purple-900 text-white text-xs px-2 py-1 rounded">Sale</span>
+      <a [routerLink]="['/']" class="img-link">
+      <img src="assets/dress6.png" alt="Gusto donec" class="w-full h-48 sm:h-56 lg:h-64 object-contain">
+    </a>
+      <h3 class="mt-4 text-sm sm:text-base font-medium text-center">Gusto donec</h3>
+      <div class="flex items-center space-x-2 mt-1">
+      <span class="text-gray-400 line-through text-sm sm:text-base">₹340.00</span>
+      <span class="text-purple-900 font-bold text-sm sm:text-base">₹250.00</span>
+    </div>
+      <div class="flex space-x-1 sm:space-x-2 mt-3">
+        <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-shopping-cart"></i></button>
+        <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-heart"></i></button>
+        <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-retweet"></i></button>
+      </div>
+    </div>
+
+    <!-- Product Card -->
+    <div class="border border-gray-200 flex flex-col items-center p-4 h-full">
+      <a [routerLink]="['/']" class="img-link">
+      <img src="assets/dress7.png" alt="tor at risus" class="w-full h-48 sm:h-56 lg:h-64 object-contain">
+      </a>
+      <h3 class="mt-4 text-sm sm:text-base font-medium text-center">tor at risus</h3>
+      <p class="text-gray-700 text-sm sm:text-base">₹159.00</p>
+      <div class="flex space-x-1 sm:space-x-2 mt-3">
+        <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-shopping-cart"></i></button>
+        <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-heart"></i></button>
+        <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-retweet"></i></button>
+      </div>
+    </div>
+
+    <!-- Product Card with Sale -->
+    <!-- Last Product Card (Centered on Mobile) -->
+<div class="col-span-2 md:col-span-1 flex justify-center border-gray-200">
+  <div class="border border-gray-200 flex flex-col items-center p-4 relative h-full w-full sm:w-auto">
+    <span class="absolute top-2 right-2 bg-purple-900 text-white text-xs px-2 py-1 rounded">Sale</span>
+    <a [routerLink]="['/sedtempu']" class="img-link">
+    <img src="assets/dress4.png" alt="Morbi tempus" class="w-full h-48 sm:h-56 lg:h-64 object-contain">
+    </a>
+    <h3 class="mt-4 text-sm sm:text-base font-medium text-center">Rorbhi</h3>
+    <div class="flex items-center space-x-2 mt-1">
+      <span class="text-gray-400 line-through text-sm sm:text-base">₹3400.00</span>
+      <span class="text-purple-900 font-bold text-sm sm:text-base">₹25000.00</span>
+    </div>
+    <div class="flex space-x-1 sm:space-x-2 mt-3">
+      <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-shopping-cart"></i></button>
+      <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-heart"></i></button>
+      <button class="bg-purple-900 text-white p-2 sm:p-3 w-10 sm:w-12 h-10 sm:h-12 flex items-center justify-center"><i class="fas fa-retweet"></i></button>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+</div>
+
